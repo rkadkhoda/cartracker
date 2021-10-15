@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+{% block title %}register{% endblock %}
+{% block body %}
+<h1 style="color:firebrick">register</h1>
+    <form method="post" novalidate>
+    {% csrf_token %}
+        {{ form.as_p }}
+    <button type="submit">register</button>
+    </form>
+{% endblock %}

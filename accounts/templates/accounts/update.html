@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+{% block title %}update{% endblock %}
+{% block body %}
+<h1 style="color:gold">update</h1>
+    <form method="post" novalidate>
+    {% csrf_token %}
+    {{ use_form.as_p }}
+    {{ pro_form.as_p }}
+    <button type="submit">update</button>
+    </form>
+{% endblock %}

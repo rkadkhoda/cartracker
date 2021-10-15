@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+{% block title %}login{% endblock %}
+{% block body %}
+<h1 style="color:firebrick">login</h1>
+    <form method="post" novalidate>
+    {% csrf_token %}
+        {{ form.as_p }}
+    <button type="submit">login</button>
+    </form>
+{% endblock %}

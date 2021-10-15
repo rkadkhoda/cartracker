@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+{% block title %}profile{% endblock %}
+{% block body %}
+<h1 style="color:gold">profile</h1>
+<table>
+    <tr>
+        <th>user: {{ profile.user.username}}</th>
+    </tr>
+     <tr>
+        <th>first name: {{ profile.user.first_name}}</th>
+    </tr>
+     <tr>
+        <th>last name: {{ profile.user.last_name}}</th>
+    </tr>
+     <tr>
+        <th>email: {{ profile.user.email}}</th>
+    </tr>
+     <tr>
+        <th>phone: {{ profile.phone_num}}</th>
+    </tr>
+     <tr>
+        <th>address: {{ profile.address}}</th>
+    </tr>
+</table>
+{% endblock %}
